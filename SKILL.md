@@ -51,10 +51,25 @@ description: 撰写Markdown格式的产品需求说明书(PRD)。触发条件：
 
 ### 阶段4：原型生成（可选）
 
-若用户需要原型，生成可交互 HTML 文件：
+若用户需要原型，使用 UI-UX-Pro-Max 技能生成可交互 HTML 文件：
+
+**设计能力**（来自 UI-UX-Pro-Max）：
+- 57 种 UI 风格（Glassmorphism、Minimalism、Brutalism 等）
+- 95 种行业配色（SaaS、电商、金融、医疗等）
+- 56 种字体配对（Google Fonts）
+- 98 条 UX 准则
+
+**技术规格**：
 - 单文件 HTML（Tailwind CSS + 原生 JS）
-- 支持页面跳转、表单校验、loading状态
+- 支持页面跳转、表单校验、loading 状态
+- 响应式设计（移动端/桌面端）
 - 可直接浏览器打开
+
+**生成示例**：
+```
+用户：生成一个 SaaS 风格的原型
+AI：使用 Corporate Blue 配色 + Minimalism 风格 + Inter 字体
+```
 
 ### 阶段5：Cloudflare Pages 部署（可选）
 
