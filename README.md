@@ -8,7 +8,7 @@
 - 📋 **Feature List 生成** - 按模块组织功能清单，自动完整性检查
 - 📄 **PRD 文档生成** - 生成包含 Mermaid 图表的完整需求文档
 - 🎨 **原型生成** - 生成可交互的 HTML 原型（Tailwind CSS）
-- 🚀 **Vercel 部署** - 一键部署原型到 Vercel
+- 🚀 **Cloudflare 部署** - 一键部署原型到 Cloudflare Pages（国内可访问）
 
 ## 📦 安装
 
@@ -69,7 +69,7 @@ prd-writer/
     ├── quality-checklist.md          # 四角色质量检查
     ├── prototype-guide.md            # HTML 原型生成指南
     ├── prompts.md                    # Prompt 模板库
-    └── vercel-deploy.md              # Vercel 部署指南
+    └── cloudflare-deploy.md          # Cloudflare Pages 部署指南
 ```
 
 ## 📄 输出文件
@@ -82,7 +82,7 @@ prd-writer/
 | `PRD.md` | 完整的产品需求文档 |
 | `quality_report.md` | 四角色质量检查报告 |
 | `prototype.html` | 可交互 HTML 原型 |
-| `vercel-deploy/` | Vercel 部署项目 |
+| `prototype/` | Cloudflare Pages 部署目录 |
 
 ## 🔄 工作流程
 
@@ -122,12 +122,21 @@ prd-writer/
 
 ## 🌐 原型部署
 
-生成的原型可以一键部署到 Vercel：
+生成的原型可以一键部署到 Cloudflare Pages（国内可访问）：
 
 ```bash
-cd vercel-deploy
-vercel --prod
+# 安装 Wrangler CLI
+npm install -g wrangler
+
+# 登录 Cloudflare
+wrangler login
+
+# 部署
+cd prototype
+wrangler pages deploy . --project-name=my-prototype
 ```
+
+部署后获得地址：`https://my-prototype.pages.dev`
 
 ## 📚 参考文档
 

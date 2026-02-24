@@ -56,35 +56,29 @@ description: 撰写Markdown格式的产品需求说明书(PRD)。触发条件：
 - 支持页面跳转、表单校验、loading状态
 - 可直接浏览器打开
 
-### 阶段5：Vercel 部署（可选）
+### 阶段5：Cloudflare Pages 部署（可选）
 
-若用户需要部署原型，生成 Vercel 项目结构：
+若用户需要部署原型，使用 Cloudflare Pages（国内可访问）：
 
-```
-prototype/
-├── public/
-│   └── index.html      # 原型页面
-├── api/                # (可选) Serverless API
-├── vercel.json         # Vercel 配置
-└── package.json
-```
-
-部署命令：
 ```bash
-cd prototype && vercel --prod
+# 安装 Wrangler CLI
+npm install -g wrangler
+
+# 部署
+cd prototype
+wrangler pages deploy . --project-name=your-project-name
 ```
 
-详见 `references/vercel-deploy.md`
+部署后获得地址：`https://your-project.pages.dev`
+
+详见 `references/cloudflare-deploy.md`
 
 ## 输出文件
 
 - `feature_list.md` - 功能清单
 - `PRD.md` - 完整需求文档
 - `prototype.html` - 可交互原型（可选）
-- `prototype/` - Vercel 部署项目（可选）
-  - `public/index.html` - 原型页面
-  - `vercel.json` - 部署配置
-  - `api/` - Serverless API（可选）
+- `prototype/` - Cloudflare Pages 部署目录（可选）
 
 ## 质量检查
 
