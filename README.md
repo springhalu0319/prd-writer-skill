@@ -226,10 +226,11 @@ python3 ui-ux-pro-max/scripts/search.py "form validation" --stack html-tailwind
 | Clawdbot | ✅ 完全支持 |
 | 其他 Agent | ✅ 支持（放入项目根目录） |
 
-## 📚 致谢
+## 📚 参考内容
 
 - [UI-UX-Pro-Max](https://ui.cod.ndjp.net/) - 专业级设计智能数据库
-- 《AI 辅助产品需求与原型设计工作流》教程
+- [《AI 辅助产品需求与原型设计工作流》教程](https://t1krl4rk9bo.feishu.cn/wiki/NSN2wm3CYiVUAAkRhCdcuvelnGg)
+- [AI 需求分析教程（交互式）](https://ai-prd-tutorial.pages.dev/) - 在线交互式教程页面
 
 ## 🤝 贡献
 
